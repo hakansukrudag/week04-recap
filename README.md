@@ -16,3 +16,4 @@ Here is the list of items in our basket. Price, VAT and quantity for each item i
   * calculatePriceWithQuantity
   * calculatePriceOfTheBasket
 
+The initial variables are declared in *index.js* file already.Please complete the rest of it.
