@@ -3,17 +3,14 @@
 We are in a supermarket and we would like to buy some items for our house.  
 Here is the list of items in our basket. Price, VAT and quantity for each item is next to the item.
 
-| Item | Price | VAT | Quantity
-| --- | --- | --- | ---
-| Baget | 1.05 | 8% | 2
-| Butter | 2.00 | 10% | 1
-| Milk | 0.86 | 3% | 2
-| O. Juice | 1.56 | 5% | 2
+| Item | Price | Quantity
+| --- | --- | ---
+| Baget | 1.05 | 2
+| Butter | 2.00 | 1
+| Milk | 0.86 | 3
   
 - Please create separate functions with following names
-  * calculateVAT
-  * calculatePriceAfterVAT
   * calculatePriceWithQuantity
-  * calculatePriceOfTheBasket
+  * calculateTotalPriceOfTheBasket
 
 The initial variables are declared in *index.js* file already.Please complete the rest of it.
