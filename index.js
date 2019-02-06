@@ -10,8 +10,23 @@ const milkQuantity = 2;
 let totalPriceOfTheBasket = 0;
 
 // Your functions will go below this line...
+function formatThePrice(poundPrice) {
+	return '£' + poundPrice.toFixed(2);
+}
 
+function calculatePriceWithQuantity(itemPrice, quantity) {
+	return itemPrice * quantity;
+}
+const bagetTotal = calculatePriceWithQuantity(bagetPrice, bagetQuantity);
+const butterTotal = calculatePriceWithQuantity(butterPrice, butterQuantity);
+const milkTotal = calculatePriceWithQuantity(milkPrice, milkQuantity);
 
-console.log( formatThePrice(totalPriceOfTheBasket) );
+function calculateTotalPriceOfTheBasket(bgt, btt, mlt) {
+	return bgt + btt + mlt;
+}
+
+totalPriceOfTheBasket = calculateTotalPriceOfTheBasket(bagetTotal, butterTotal, milkTotal);
+
+console.log('Total Price = ' + formatThePrice(totalPriceOfTheBasket));
 
 // The output should be "The total price for your basket is: £5.82"
