@@ -7,22 +7,30 @@ const butterQuantity = 1;
 const milkPrice = 0.86;
 const milkQuantity = 2;
 
-let totalPriceOfTheBasket = 0;
+// let totalPriceOfTheBasket = 0;
 
 // Your functions will go below this line...
 
-function calculatePriceWithQuantity(a, b, c, d, e, f) {
-    return calculatePriceWithQuantity = (bagetPrice * bagetQuantity) + (butterPrice * butterQuantity) + (milkPrice * milkQuantity)
+function calculatePriceWithQuantity(price, quantity) {
+   return price * quantity
 }
 
-var priceWithQuantity = calculatePriceWithQuantity(bagetPrice, bagetQuantity, butterPrice, butterQuantity, milkPrice, milkQuantity)
+const totalPriceOfBaget = calculatePriceWithQuantity(bagetPrice, bagetQuantity);
+const totalPriceOfButter = calculatePriceWithQuantity(butterPrice, butterQuantity);
+const totalPriceOfMilk = calculatePriceWithQuantity(milkPrice, milkQuantity);
 
-function formatThePrice(calculatePriceWithQuantity) {
-    return 'The total price of your basket is: ' + '£' + calculatePriceWithQuantity.toFixed(2)
+
+function calculateTotalPriceOfTheBasket(totalPriceOfBaget, totalPriceOfButter, totalPriceOfMilk){
+    return totalPriceOfBaget + totalPriceOfButter + totalPriceOfMilk;
 }
 
+const totalPriceOfTheBasket = calculateTotalPriceOfTheBasket(totalPriceOfBaget, totalPriceOfButter, totalPriceOfMilk)
 
-console.log( formatThePrice(priceWithQuantity) );
+function formatThePrice(calculateTotalPriceOfTheBasket) {
+    return 'The total price of your basket is: ' + '£' + calculateTotalPriceOfTheBasket.toFixed(2)
+}
+ 
+console.log( formatThePrice(totalPriceOfTheBasket) );
 
 
 // The output should be "The total price for your basket is: £5.82"
